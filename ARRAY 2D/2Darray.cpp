@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool linearsearch(int arr[][4],int n,int key){
+bool linearsearch(int arr[][4],int n,int key){ //we give the column size as 4 because we have to give the column size in the function parameter
     for(int i=0;i<n;i++){
         for(int j=0;j<4;j++){
             if(arr[i][j]==key){
@@ -59,7 +59,7 @@ int main(){
     }
 
     //largest row sum
-    int largest=INT_MIN;
+    int largest=INT_MIN;     //set INT_MIN when finding largest number in array and vice versa for smallest number in array
     int index=0;
     for(int i=0;i<3;i++){
         int sum=0;
