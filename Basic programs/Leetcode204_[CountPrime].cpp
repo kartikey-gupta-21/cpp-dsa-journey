@@ -4,8 +4,8 @@ using namespace std;
 class Solution {
 public:
     int countPrimes(int n) {
-        //couldnt directly use for loop because that would produce TLE 
-        vector<bool> prime(n+1,true); //made n+1 becaouse indexing starts from 0 even though we know that prime starts from 2
+        //couldnt directly use for loop because that would produce TLE (5*10^6) so we use sieve of erastothenes
+        vector<bool> prime(n+1,true); //made n+1 because indexing starts from 0 even though we know that prime starts from 2
         prime[0]=prime[1]=false;
         int count=0;
         for(int i=2;i<n;i++){
