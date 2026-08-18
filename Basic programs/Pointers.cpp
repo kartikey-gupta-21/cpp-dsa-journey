@@ -17,10 +17,10 @@ int main(){
 
     num++;
     cout<<"Value of num after increment is: "<<num<<endl;
-    cout<<"Address of *ptr after increment is: "<<*ptr<<endl;
+    cout<<"Value of *ptr after increment is: "<<ptr<<endl;
     (*ptr)++;
     cout<<"Value of num after increment is: "<<num<<endl;
-    cout<<"Address of *ptr after increment is: "<<*ptr<<endl;
+    cout<<"Value of *ptr after increment is: "<<*ptr<<endl;
 
     //copy a pointer
     int *ptr2=ptr;
